@@ -10,7 +10,7 @@ struct LoginView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 95, height: 95)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .frame(maxWidth: .infinity, alignment: .leading) // 왼쪽 정렬
                 
                 Text("안녕하세요.")
                     .font(.mainTextExtraBold24)
