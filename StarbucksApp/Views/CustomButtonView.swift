@@ -21,11 +21,11 @@ struct CustomButtonView: View {
                     .frame(width: 30, height: 30)
                 Text(buttonText)
                     .font(.mainTextSemiBold16)
-                    .foregroundColor(.black03)
+                    .foregroundStyle(.black03)
             }
             .padding()
             .background(Color.white)
-            .cornerRadius(15)
+            .clipShape(RoundedRectangle(cornerRadius: 15))
             .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 0)
         }
     }

@@ -42,8 +42,16 @@ extension Font {
         return .mainText(type: .bold, size: 20)
     }
     
+    static var mainTextBold16: Font {
+        return .mainText(type: .bold, size: 16)
+    }
+    
     static var mainTextBold24: Font {
         return .mainText(type: .bold, size: 24)
+    }
+    
+    static var mainTextSemiBold12: Font {
+        return .mainText(type: .semibold, size: 12)
     }
     
     static var mainTextSemiBold24: Font {
@@ -96,6 +104,14 @@ extension Font {
     
     static var mainTextSemiBold13: Font {
         return .mainText(type: .semibold, size: 13)
+    }
+    
+    static var mainTextRegular24: Font {
+        return .mainText(type: .regular, size: 24)
+    }
+    
+    static var mainTextRegular20: Font {
+        return .mainText(type: .regular, size: 20)
     }
     
 }
