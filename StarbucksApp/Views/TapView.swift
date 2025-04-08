@@ -35,6 +35,7 @@ struct TapView: View {
             .onAppear {
                     UITabBar.appearance().backgroundColor = .white
                 }
+            .navigationBarBackButtonHidden(true)
         }
 }
 

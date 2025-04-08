@@ -21,7 +21,7 @@ struct CustomButtonViewWithImage: View {
                     .frame(width: 20, height: 20)
                 Text(buttonText)
                     .font(.mainTextSemiBold16)
-                    .foregroundColor(.black02)
+                    .foregroundStyle(.black02)
             }
         }
     }

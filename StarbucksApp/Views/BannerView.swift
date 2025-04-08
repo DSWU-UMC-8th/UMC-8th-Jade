@@ -37,7 +37,7 @@ struct BannerView: View {
             }
             .padding()
         }
-        .padding(.top, 0)
+        .ignoresSafeArea(edges: .top)
     }
 }
 
