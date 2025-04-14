@@ -102,7 +102,7 @@ struct LoginView: View {
 
                              // 로그인 성공 후 TapView로 이동
                              .navigationDestination(isPresented: $navigateToHome) {
-                                 TapView()
+                                 MainTabView()
                             }
                         }
                         

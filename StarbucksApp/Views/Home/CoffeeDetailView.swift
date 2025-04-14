@@ -70,6 +70,7 @@ struct CoffeeDetailView: View {
                     .font(.mainTextSemiBold24)
                     .foregroundStyle(.black01)
             }
+            .padding(.horizontal, 15)
             
             // 타입 선택
             if viewModel.coffee.types.count != 0 {
@@ -112,6 +113,7 @@ struct CoffeeDetailView: View {
                     print("주문하기")
                 }
         }
+        
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
     }
@@ -120,5 +122,5 @@ struct CoffeeDetailView: View {
 
 
 #Preview {
-    CoffeeDetailView(viewModel: CoffeeDetailViewModel(coffee: DummyCoffeeDetailData.espressoMacchiato))
+    CoffeeDetailView(viewModel: CoffeeDetailViewModel(coffee: DummyCoffeeDetailData.americano))
 }
