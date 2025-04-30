@@ -32,7 +32,7 @@ struct SignupView: View {
                     
                     Rectangle()
                         .frame(height: 1)
-                        .foregroundColor(isNicknameFocused ? Color("green01") : Color("gray03"))
+                        .foregroundStyle(isNicknameFocused ? Color("green01") : Color("gray03"))
                     
                     TextField("이메일", text: $viewModel.email)
                         .font(.mainTextRegular13)
@@ -40,7 +40,7 @@ struct SignupView: View {
                     
                     Rectangle()
                         .frame(height: 1)
-                        .foregroundColor(isEmailFocused ? Color("green01") : Color("gray03"))
+                        .foregroundStyle(isEmailFocused ? Color("green01") : Color("gray03"))
                     
                     SecureField("비밀번호", text: $viewModel.password)
                         .font(.mainTextRegular13)
@@ -48,7 +48,7 @@ struct SignupView: View {
                     
                     Rectangle()
                         .frame(height: 1)
-                        .foregroundColor(isPasswordFocused ? Color("green01") : Color("gray03"))
+                        .foregroundStyle(isPasswordFocused ? Color("green01") : Color("gray03"))
                     
                     Spacer()
                     

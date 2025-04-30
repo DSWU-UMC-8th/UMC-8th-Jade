@@ -11,6 +11,8 @@ struct OtherView: View {
     @StateObject private var viewModel = OtherViewModel()
     @AppStorage("nickname") private var nickname: String = ""
     @AppStorage("isLoggedIn") private var isLoggedIn: Bool = false
+    @State private var isReceiptsViewActive: Bool = false
+    @Environment(\.modelContext) private var context
 
     var body: some View {
         NavigationStack {
@@ -60,11 +62,11 @@ struct OtherView: View {
                     if nickname.isEmpty {
                         Text("(작성한 닉네임)")
                             .font(.mainTextSemiBold24)
-                            .foregroundColor(.green)
+                            .foregroundStyle(.green)
                     } else {
                         Text(nickname)
                             .font(.mainTextSemiBold24)
-                            .foregroundColor(.green)
+                            .foregroundStyle(.green)
                     }
                     
                     Text("님")
@@ -82,10 +84,10 @@ struct OtherView: View {
                         print("별 히스토리")
                     }
                     
-                    CustomButtonView(buttonText: "전자 영수증", imageName: "other_receipt_button") {
-                        print("전자 영수증")
+                    NavigationLink(destination: ReceiptsView(context: context)) {
+                        CustomButtonView(buttonText: "전자 영수증", imageName: "other_receipt_button")
                     }
-                    
+
                     CustomButtonView(buttonText: "나만의 메뉴", imageName: "other_menu_button") {
                         print("나만의 메뉴")
                     }
