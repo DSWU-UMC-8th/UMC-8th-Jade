@@ -12,6 +12,7 @@ struct StarbucksAppApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
+                .modelContainer(for: ReceiptsModel.self)
         }
     }
 }
