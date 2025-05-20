@@ -114,4 +114,8 @@ extension Font {
         return .mainText(type: .regular, size: 20)
     }
     
+    static var mainTextSemiBold22: Font {
+        return .mainText(type: .semibold, size: 22)
+    }
+    
 }
